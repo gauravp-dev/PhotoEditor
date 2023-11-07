@@ -1,0 +1,272 @@
+input[id="fileBrowser"] {
+  display: none;
+}
+.rotate {
+  border: none;
+  background: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+
+  color: #000000;
+}
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+
+  color: #241b50;
+}
+.description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #000000;
+}
+.fileDrag {
+  box-sizing: border-box;
+  width: 624px;
+  height: 247px;
+
+  background: rgba(183, 183, 183, 0.17);
+  border: 1px dashed #000000;
+  border-radius: 13px;
+  display: block;
+}
+.uploadButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    91.2deg,
+    #d050ed 11.27%,
+    #856cf2 48.13%,
+    #5f7af5 102.11%
+  );
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  border: none;
+}
+.uploadButton:hover {
+  cursor: pointer;
+}
+.downloadButton {
+  margin-top: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    91.2deg,
+    #d050ed 11.27%,
+    #856cf2 48.13%,
+    #5f7af5 102.11%
+  );
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  border: none;
+}
+.applyButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 19px;
+
+  border-color: #d050ed;
+  color: #d050ed;
+
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.25));
+  border-radius: 9px;
+}
+.cancelButton {
+  border: none;
+  background: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 19px;
+
+  color: rgba(134, 134, 134, 0.5);
+}
+.addButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    91.2deg,
+    #d050ed 11.27%,
+    #856cf2 48.13%,
+    #5f7af5 102.11%
+  );
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+.logoText {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.imageEditor {
+  font-family: calibri;
+  font-size: 16pt;
+}
+
+.canvas {
+  border: 2px solid black;
+  margin-top: 30px;
+  /* margin-left: 200px; */
+}
+/* .canvas1 {
+    border: 2px solid black;
+    display: inline-block;
+  } */
+
+.editorOptions {
+  padding: 200px;
+}
+
+.imageOption {
+  margin: 15px;
+}
+/* The side navigation menu */
+.sidebar {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  background: linear-gradient(180deg, #d050ed 0%, #6478f4 100%);
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 18px;
+
+  text-decoration: none;
+}
+.activeButton {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.colorText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+}
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+}
+.cropper {
+  /* position: absolute; */
+  width: 700px;
+  height: 700px;
+  margin-top: 18px;
+  /* margin-left: 200px; */
+  border: 2px solid black;
+}
+.annotation {
+  margin-top: 18px;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+.ReactCrop__crop-selection {
+  border: 1px solid white !important;
+}
+.ReactCrop__rule-of-thirds-vt::before,
+.ReactCrop__rule-of-thirds-vt::after,
+.ReactCrop__rule-of-thirds-hz::before,
+.ReactCrop__rule-of-thirds-hz::after {
+  background-color: white !important;
+}
+.ReactCrop__drag-handle::after {
+  background-color: unset !important;
+  border: unset !important;
+  outline: unset !important;
+}
+.ReactCrop .ord-nw {
+  border-top: 2px solid white !important;
+  border-left: 2px solid white !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: -3px !important;
+  margin-left: -3px !important;
+}
+.ReactCrop .ord-ne {
+  border-top: 2px solid white !important;
+  border-right: 2px solid white !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: -3px !important;
+  margin-right: -3px !important;
+}
+.ReactCrop .ord-sw {
+  border-bottom: 2px solid white !important;
+  border-left: 2px solid white !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-bottom: -3px !important;
+  margin-left: -3px !important;
+}
+.ReactCrop .ord-se {
+  border-bottom: 2px solid white !important;
+  border-right: 2px solid white !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-bottom: -3px !important;
+  margin-right: -3px !important;
+}
+.yvPWU {
+  box-shadow: unset !important;
+}
